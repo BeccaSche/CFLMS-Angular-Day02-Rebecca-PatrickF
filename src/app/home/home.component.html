@@ -1,11 +1,14 @@
 <div class="container-fluid">
-<h1>Car Insurance</h1>
-
-<div *ngFor="let car of cars" class="row" >
-        <div class="col-4">
-        <h5>{{car.brand}} built in {{car.year}}</h5>
-        <img src="{{car.img}}" alt="image of a car" width="60%">
+    <h1>Car Insurance</h1>
+    <div class="row row-cols-4 justify-content-between">
+        <div *ngFor="let car of cars" class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="{{car.img}}" class="card-img-top" alt="image of a car">
+                <div class="card-body">
+                    <h5 class="card-title">{{car.brand}}</h5>
+                    <p class="card-text">Year of production: {{car.year}}</p>
+                </div>
+            </div>
         </div>
     </div>
-</div>
 </div>
