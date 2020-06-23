@@ -1,0 +1,11 @@
+<div class="container-fluid">
+<h1>Car Insurance</h1>
+
+<div *ngFor="let car of cars" class="row" >
+        <div class="col-4">
+        <h5>{{car.brand}} built in {{car.year}}</h5>
+        <img src="{{car.img}}" alt="image of a car" width="60%">
+        </div>
+    </div>
+</div>
+</div>
