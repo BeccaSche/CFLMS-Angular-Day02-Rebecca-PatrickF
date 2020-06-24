@@ -18,6 +18,7 @@
       <input type="email" class="form-control" formControlName="email">
     </label>
     <input type="submit" class="btn btn-primary m-2" value="Submit">
+    <p ng-show="submitted">Thank you {{this.contact.value.fullname}}! We will see if {{this.contact.value.carBrand}} is available.</p>
+    
   </form>
-  <p><ng-template [ngIf]="this.submitted">Thank you {{this.contact.value.fullname}}! We will see if {{this.contact.value.carBrand}} is available.</ng-template></p>
 </div>
